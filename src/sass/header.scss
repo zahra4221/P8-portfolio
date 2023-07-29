@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #222222;
+  color: #9f7a34;
+  padding: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 16px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: "Victor Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}

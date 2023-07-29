@@ -1,0 +1,36 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.presentation {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+@media (max-width: 768px) {
+  .message {
+    height: 30vh;
+  }
+
+  .presentation {
+    font-size: 10px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .message {
+    height: 40vh;
+  }
+
+  .presentation {
+    font-size: 16px;
+    margin-left: 32px;
+  }
+}

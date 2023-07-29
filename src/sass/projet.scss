@@ -1,0 +1,129 @@
+.background_color {
+  background-image: linear-gradient(
+    to bottom right,
+    #1b1e3e,
+    #46052b,
+    hsl(334, 54%, 18%),
+    rgb(91, 7, 70)
+  );
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.projets-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 50px;
+}
+
+.projet-card {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.projet-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.projet-image-src {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.7s ease;
+}
+
+.projet-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.projet-card:hover .projet-image-src {
+  opacity: 0.3;
+}
+
+.projet-card:hover .projet-details {
+  transform: translateX(0);
+}
+
+.projet-title {
+  margin-top: 0;
+  display: none;
+}
+
+.projet-description {
+  display: none;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.projet-card:hover .projet-title,
+.projet-card:hover .projet-description {
+  display: block;
+}
+
+.projet_title {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.link_projet {
+  text-align: center;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .projets-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projet-title {
+    margin-top: 0;
+    display: none;
+    font-size: 12px;
+  }
+
+  .projet-description {
+    display: none;
+    margin: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projets-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 50px;
+  }
+
+  .projet-title {
+    margin-top: 0;
+    display: none;
+    font-size: 20px;
+  }
+
+  .projet-description {
+    display: none;
+    margin: 20px;
+    font-size: 16px;
+  }
+}
