@@ -1,3 +1,9 @@
+# Presentation   
+  
+I designed and developed a portfolio using React from scratch, with a responsive design for an optimal experience on all devices. I structured the content using React components, ensured adaptability through CSS media queries, and added interactive features for an enriching user experience.  
+  
+  
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
